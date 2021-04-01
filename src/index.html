@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WeatherApp</title>
+</head>
+
+<body>
+    <div class="weather">
+        <form id="search">
+            <button id="search-icon">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" id="city" name="city" placeholder="Search city" autocomplete="off">
+            <span class="city-error">No matching location found!</span>
+        </form>
+        <div class="container">
+            <p class="rainfall"></p>
+            <h2 class="city-country"></h2>
+            <div class="weather-inner">
+                <div class="left">
+                    <span class="temperature"></span>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li class="feel-like"></li>
+                        <li class="wind-speed"></li>
+                        <li class="humidity"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Loading-->
+    <div class="loading"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/558331cc39.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
